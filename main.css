@@ -1,0 +1,114 @@
+body {
+    background-image: url('https://pbs.twimg.com/media/FI7OTduVIAAgksG?format=jpg&name=large');
+    background-size:cover;
+    width: 100%;
+    text-align: center;
+    height: 100vw;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: fantasy;
+    color: #ffffff;
+    text-shadow:#36aeff 1px 0 10px, black 1px 0 10px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.fish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #1d1d1d;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0 0 10px 5px #4949F8;
+    background-image: url('https://palia.wiki.gg/images/6/66/Orange_Bluegill.png');
+    background-size: contain;
+}
+
+.bugs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #1d1d1d;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0 0 10px 5px #37c03e;
+    background-image: url('https://palia.wiki.gg/images/3/3f/Fairy_Mantis.png');
+    background-size: contain;
+}
+
+.food {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #1d1d1d;
+    background-image: url('https://palia.wiki.gg/images/7/76/Akwinduu_Chapaa.png');
+    background-position: 8px;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0 0 10px 5px #c9ce2e;
+}
+
+a {
+    text-decoration: none;
+    font-family: fantasy;
+}
+
+.a-fish {
+    color: #4949f8;
+    text-shadow: #000000 1px 0 10px;
+    font-size: 50px;
+}
+
+.a-bugs {
+    color: #37c03e;
+    text-shadow: #000000 1px 0 10px;
+    font-size: 50px;
+}
+
+.a-food {
+    color: #c9ce2e;
+    text-shadow: #000000 1px 0 10px;
+    font-size: 50px;
+}
+
+.contents {
+    width: fit-content;
+    height: 265px;
+    margin: 70px 0 0 444px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+
+.lista {
+    list-style-type: none;
+    margin-left: -25px;
+    color: #fff5f5;
+    font-size: 50px;
+    margin: 0 35px 0 0;
+    font-family: fantasy;
+    text-shadow: #36aeff 1px 0 15px, black 1px 0 15px;
+}
+
+.grove {
+    margin-bottom: 10px;
+    color: #ffffff;
+}

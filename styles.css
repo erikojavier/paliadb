@@ -1,0 +1,85 @@
+body {
+    height: 100vw;
+    width: fit-content;
+    margin: 0 auto;
+    font-family: fantasy;
+    background-color: #ffffcc;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: -5px;
+}
+
+.batman {
+    background-color: #d7d9f2;
+  }
+  
+  .flash {
+    background-color: #d7d9f2;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #d7d9f2;
+  }
+  
+  caption {
+    font-size: 25px;
+    background-color: rgb(25, 101, 149);
+    color: rgb(248, 248, 248);
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  th,
+  td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 6px;
+  }
+  
+  td {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  img {
+    width: 100px;
+  }
+
+  .uncommon {
+    color: #1D4313;
+  }
+
+  .rare {
+    color: #216571;
+  }
+
+  .epic {
+    color: #573ED2;
+  }
+
+  .common {
+    color: rgb(82, 82, 82);
+  }
+
+  .legendary {
+    color: #661100;
+  }
+
+  .title { 
+    background-color: rgb(237, 188, 214);
+  }
+
+  input[type=checkbox] {
+    margin: 4px 0 0;
+    line-height: normal;
+    width: 20px;
+    height: 20px;
+  }

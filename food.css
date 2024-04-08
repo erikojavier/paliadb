@@ -1,0 +1,74 @@
+body {
+    height: 100vw;
+    width: fit-content;
+    margin: 0 auto;
+    font-family: fantasy;
+    background-color: #fafac3;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+}
+  
+  table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    background-color: #c7c7c7;
+    text-shadow: rgb(212, 212, 212) 1px 1px 1px;
+  }
+  
+  th,
+  td {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 8px 6px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  td {
+    text-align: center;
+    font-weight: bold;
+    background-color: #c7c7c7;
+  }
+
+  img {
+    width: 100px;
+  }
+
+  .uncommon {
+    color: #1D4313;
+  }
+
+  .rare {
+    color: #216571;
+  }
+
+  .epic {
+    color: #573ED2;
+  }
+
+  .common {
+    color: rgb(82, 82, 82);
+  }
+
+  .legendary {
+    color: #661100;
+  }
+
+  .title { 
+    background-color: rgb(237, 188, 214);
+  }
+
+  input[type=checkbox] {
+    margin: 4px 0 0;
+    line-height: normal;
+    width: 20px;
+    height: 20px;
+  }
+
+  
+

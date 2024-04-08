@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugs database</title>
+    <link rel="stylesheet" href="bugs.css">
+</head>
+<body>
+    <h1>Bugs database</h1>
+    <table id="table2">
+        <caption>
+          Bugs
+        </caption>
+        <colgroup>
+          <col />
+          <col span="2" class="batman" />
+          <col span="2" class="flash" />
+        </colgroup>
+        <tr>
+          <td class="title">Rarity
+          </td>
+          <th scope="col" class="title" onclick="sortTable(0)">Image</th>
+          <th scope="col" class="title" onclick="sortTable(1)">Name</th>
+          <th scope="col" class="title" onclick="sortTable(2)">Location</th>
+          <th scope="col" class="title" onclick="sortTable(3)">Time</th>
+          <th scope="col" class="title" onclick="sortTable(4)">Normal</th>
+          <th scope="col" class="title" onclick="sortTable(5)">Star</th>
+          <th scope="col" class="title" onclick="sortTable(6)">Placed</th>
+        </tr>
+        <tr>
+          <th scope="row" class="epic">Epic</th>
+          <td><img src="https://palia.wiki.gg/images/1/17/Ancient_Amber_Beetle.png"/></td>
+          <td>Ancient Amber Beetle</td>
+          <td>Bahari Forest</td>
+          <td>Any Time</td>
+          <td><input type="checkbox" id="cb248"></td>
+          <td><input type="checkbox" id="cb249"></td>
+          <td><input type="checkbox" id="cb250"></td>
+        </tr>
+        <tr>
+            <th scope="row" class="legendary">Legendary</th>
+            <td><img src="https://palia.wiki.gg/images/0/07/Ancient_Flowbug.png"/></td>
+            <td>Ancient Flowbug</td>
+            <td>Temple of the Gales</td>
+            <td>Any time</td>
+            <td><input type="checkbox" id="cb251"></td>
+            <td><input type="checkbox" id="cb252"></td>
+            <td><input type="checkbox" id="cb253"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="rare">Rare</th>
+            <td><img src="https://palia.wiki.gg/images/thumb/0/08/Azure_Stonehopper.png/300px-Azure_Stonehopper.png"/></td>
+            <td>Azure Stonehopper</td>
+            <td>Bahari Fields</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb254"></td>
+            <td><input type="checkbox" id="cb255"></td>
+            <td><input type="checkbox" id="cb256"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="uncommon">Uncommon</th>
+            <td><img src="https://palia.wiki.gg/images/2/28/Bahari_Bee.png"/></td>
+            <td>Bahari Bee</td>
+            <td>Bahari Fields, Bahari Forest</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb257"></td>
+            <td><input type="checkbox" id="cb258"></td>
+            <td><input type="checkbox" id="cb259"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="common">Common</th>
+            <td><img src="https://palia.wiki.gg/images/d/d4/Bahari_Crab.png"/></td>
+            <td>Bahari Crab</td>
+            <td>Bahari Coast</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb260"></td>
+            <td><input type="checkbox" id="cb261"></td>
+            <td><input type="checkbox" id="cb262"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="rare">Rare</th>
+            <td><img src="https://palia.wiki.gg/images/d/df/Bahari_Glowbug.png"/></td>
+            <td>Bahari Glowbug</td>
+            <td>Bahari Fields</td>
+            <td>Evening, Night</td>
+            <td><input type="checkbox" id="cb263"></td>
+            <td><input type="checkbox" id="cb264"></td>
+            <td><input type="checkbox" id="cb265"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="rare">Rare</th>
+            <td><img src="https://palia.wiki.gg/images/b/be/Brighteye_Butterfly.png"/></td>
+            <td>Brighteye Butterfly</td>
+            <td>Bahari Forest</td>
+            <td>Morning, Day</td>
+            <td><input type="checkbox" id="cb266"></td>
+            <td><input type="checkbox" id="cb267"></td>
+            <td><input type="checkbox" id="cb268"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="common">Common</th>
+            <td><img src="https://palia.wiki.gg/images/f/f1/Brushtail_Dragonfly.png"/></td>
+            <td>Brushtail Dragonfly</td>
+            <td>Kilima Lakes,<br> Bahari Rivers,<br> Bahari Ponds</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb269"></td>
+            <td><input type="checkbox" id="cb270"></td>
+            <td><input type="checkbox" id="cb271"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="uncommon">Uncommon</th>
+            <td><img src="https://palia.wiki.gg/images/a/a2/Cerulean_Cicada.png"/></td>
+            <td>Cerulean Cicada</td>
+            <td>Bahari Fields, Bahari Forest</td>
+            <td>Morning, Day</td>
+            <td><input type="checkbox" id="cb272"></td>
+            <td><input type="checkbox" id="cb273"></td>
+            <td><input type="checkbox" id="cb27"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="common">Common</th>
+            <td><img src="https://palia.wiki.gg/images/c/c0/Common_Bark_Cicada.png"/></td>
+            <td>Common Bark Cicada</td>
+            <td>Bahari Fields, Bahari Forest</td>
+            <td>Morning, Day</td>
+            <td><input type="checkbox" id="cb274"></td>
+            <td><input type="checkbox" id="cb275"></td>
+            <td><input type="checkbox" id="cb276"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="common">Common</th>
+            <td><img src="https://palia.wiki.gg/images/7/76/Common_Blue_Butterfly.png"/></td>
+            <td>Common Blue Butterfly</td>
+            <td>Everywhere</td>
+            <td>Morning, Day</td>
+            <td><input type="checkbox" id="cb277"></td>
+            <td><input type="checkbox" id="cb278"></td>
+            <td><input type="checkbox" id="cb279"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="common">Common</th>
+            <td><img src="https://palia.wiki.gg/images/5/55/Common_Field_Cricket.png"/></td>
+            <td>Common Field Cricket</td>
+            <td>Kilima Fields, Bahari Fields</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb280"></td>
+            <td><input type="checkbox" id="cb281"></td>
+            <td><input type="checkbox" id="cb282"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="uncommon">Uncommon</th>
+            <td><img src="https://palia.wiki.gg/images/3/3d/Duskwing_Butterfly.png"/></td>
+            <td>Duskwing Butterfly</td>
+            <td>Dragon Shrine</td>
+            <td>Morning, Day</td>
+            <td><input type="checkbox" id="cb283"></td>
+            <td><input type="checkbox" id="cb284"></td>
+            <td><input type="checkbox" id="cb285"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="epic">Epic</th>
+            <td><img src="https://palia.wiki.gg/images/3/3f/Fairy_Mantis.png"/></td>
+            <td>Fairy Mantis</td>
+            <td>Bahari Fields</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb286"></td>
+            <td><input type="checkbox" id="cb287"></td>
+            <td><input type="checkbox" id="cb288"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="rare">Rare</th>
+            <td><img src="https://palia.wiki.gg/images/3/3d/Firebreathing_Dragonfly.png"/></td>
+            <td>Firebreathing Dragonfly</td>
+            <td>Kilima Fields</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb289"></td>
+            <td><input type="checkbox" id="cb290"></td>
+            <td><input type="checkbox" id="cb291"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="uncommon">Uncommon</th>
+            <td><img src="https://palia.wiki.gg/images/b/b5/Garden_Ladybug.png"/></td>
+            <td>Garden Ladybug</td>
+            <td>Bahari Fields</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb292"></td>
+            <td><input type="checkbox" id="cb293"></td>
+            <td><input type="checkbox" id="cb294"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="uncommon">Uncommon</th>
+            <td><img src="https://palia.wiki.gg/images/2/27/Garden_Leafhopper.png"/></td>
+            <td>Garden Leafhopper</td>
+            <td>Kilima Fields</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb295"></td>
+            <td><input type="checkbox" id="cb296"></td>
+            <td><input type="checkbox" id="cb297"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="uncommon">Uncommon</th>
+            <td><img src="https://palia.wiki.gg/images/9/91/Garden_Mantis.png"/></td>
+            <td>Garden Mantis</td>
+            <td>Kilima Lake</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb298"></td>
+            <td><input type="checkbox" id="cb299"></td>
+            <td><input type="checkbox" id="cb300"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="uncommon">Uncommon</th>
+            <td><img src="https://palia.wiki.gg/images/4/4d/Garden_Millipede.png"/></td>
+            <td>Garden Millipede</td>
+            <td>Kilima Fields</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb301"></td>
+            <td><input type="checkbox" id="cb302"></td>
+            <td><input type="checkbox" id="cb303"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="uncommon">Uncommon</th>
+            <td><img src="https://palia.wiki.gg/images/8/88/Garden_Snail.png"/></td>
+            <td>Garden Snail</td>
+            <td>Bahari Coast, Bahari Forest</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb304"></td>
+            <td><input type="checkbox" id="cb305"></td>
+            <td><input type="checkbox" id="cb306"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="rare">Rare</th>
+            <td><img src="https://palia.wiki.gg/images/a/a9/Golden_Glory_Bee.png"/></td>
+            <td>Golden Glory Bee</td>
+            <td>Kilima Fields</td>
+            <td>Morning, Day</td>
+            <td><input type="checkbox" id="cb307"></td>
+            <td><input type="checkbox" id="cb308"></td>
+            <td><input type="checkbox" id="cb309"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="rare">Rare</th>
+            <td><img src="https://palia.wiki.gg/images/thumb/6/6c/Gossamer_Veil_Moth.png/300px-Gossamer_Veil_Moth.png"/></td>
+            <td>Gossamer Veil Moth</td>
+            <td>Kilima Fields</td>
+            <td>Evening, Night</td>
+            <td><input type="checkbox" id="cb310"></td>
+            <td><input type="checkbox" id="cb311"></td>
+            <td><input type="checkbox" id="cb312"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="rare">Rare</th>
+            <td><img src="https://palia.wiki.gg/images/1/17/Hairy_Millipede.png"/></td>
+            <td>Hairy Millipede</td>
+            <td>Bahari Forest</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb313"></td>
+            <td><input type="checkbox" id="cb314"></td>
+            <td><input type="checkbox" id="cb315"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="uncommon">Uncommon</th>
+            <td><img src="https://palia.wiki.gg/images/1/1b/Inky_Dragonfly.png"/></td>
+            <td>Inky Dragonfly</td>
+            <td>Bahari Rivers, Bahari Ponds</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb316"></td>
+            <td><input type="checkbox" id="cb317"></td>
+            <td><input type="checkbox" id="cb318"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="epic">Epic</th>
+            <td><img src="https://palia.wiki.gg/images/3/3c/Jewelwing_Dragonfly.png"/></td>
+            <td>Jewelwing Dragonfly</td>
+            <td>Cliffs above Pavel Mines</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb319"></td>
+            <td><input type="checkbox" id="cb320"></td>
+            <td><input type="checkbox" id="cb321"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="common">Common</th>
+            <td><img src="https://palia.wiki.gg/images/1/1f/Kilima_Night_Moth.png"/></td>
+            <td>Kilima Night Moth</td>
+            <td>Everywhere</td>
+            <td>Evening, Night</td>
+            <td><input type="checkbox" id="cb322"></td>
+            <td><input type="checkbox" id="cb323"></td>
+            <td><input type="checkbox" id="cb324"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="rare">Rare</th>
+            <td><img src="https://palia.wiki.gg/images/thumb/a/af/Leafstalker_Mantis.png/300px-Leafstalker_Mantis.png"/></td>
+            <td>Leafstalker Mantis</td>
+            <td>Bahari Forest</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb325"></td>
+            <td><input type="checkbox" id="cb326"></td>
+            <td><input type="checkbox" id="cb327"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="uncommon">Uncommon</th>
+            <td><img src="https://palia.wiki.gg/images/d/db/Lunar_Fairy_Moth.png"/></td>
+            <td>Lunar Fairy Moth</td>
+            <td>Bahari Fields, Bahari Forest</td>
+            <td>Evening, Night</td>
+            <td><input type="checkbox" id="cb328"></td>
+            <td><input type="checkbox" id="cb329"></td>
+            <td><input type="checkbox" id="cb330"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="common">Common</th>
+            <td><img src="https://palia.wiki.gg/images/5/58/Paper_Lantern_Bug.png"/></td>
+            <td>Paper Lantern Bug</td>
+            <td>Bahari Coast, Bahari Forest</td>
+            <td>Evening, Night</td>
+            <td><input type="checkbox" id="cb331"></td>
+            <td><input type="checkbox" id="cb332"></td>
+            <td><input type="checkbox" id="cb333"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="rare">Rare</th>
+            <td><img src="https://palia.wiki.gg/images/c/c7/Princess_Ladybug.png"/></td>
+            <td>Princess Ladybug</td>
+            <td>Kilima Lake</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb334"></td>
+            <td><input type="checkbox" id="cb335"></td>
+            <td><input type="checkbox" id="cb336"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="uncommon">Uncommon</th>
+            <td><img src="https://palia.wiki.gg/images/d/d5/Proudhorned_Stag_Beetle.png"/></td>
+            <td>Proudhorned Stag Beetle</td>
+            <td>Kilima Fields</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb337"></td>
+            <td><input type="checkbox" id="cb338"></td>
+            <td><input type="checkbox" id="cb339"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="epic">Epic</th>
+            <td><img src="https://palia.wiki.gg/images/thumb/d/df/Rainbow-Tipped_Butterfly.png/300px-Rainbow-Tipped_Butterfly.png"/></td>
+            <td>Rainbow-Tipped Butterfly</td>
+            <td>Bahari Fields</td>
+            <td>Morning, Day</td>
+            <td><input type="checkbox" id="cb340"></td>
+            <td><input type="checkbox" id="cb341"></td>
+            <td><input type="checkbox" id="cb342"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="rare">Rare</th>
+            <td><img src="https://palia.wiki.gg/images/c/c8/Raspberry_Beetle.png"/></td>
+            <td>Raspberry Beetle</td>
+            <td>Daiya Family Farm</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb343"></td>
+            <td><input type="checkbox" id="cb344"></td>
+            <td><input type="checkbox" id="cb345"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="rare">Rare</th>
+            <td><img src="https://palia.wiki.gg/images/6/60/Scintillating_Centipede.png"/></td>
+            <td>Scintillating Centipede</td>
+            <td>Bahari Fields,<br> Bahari Forest,<br> Caves</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb346"></td>
+            <td><input type="checkbox" id="cb347"></td>
+            <td><input type="checkbox" id="cb348"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="uncommon">Uncommon</th>
+            <td><img src="https://palia.wiki.gg/images/9/91/Spineshell_Crab.png"/></td>
+            <td>Spineshell Crab</td>
+            <td>Bahari Coast,<br> Flooded Fortress</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb349"></td>
+            <td><input type="checkbox" id="cb350"></td>
+            <td><input type="checkbox" id="cb351"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="rare">Rare</th>
+            <td><img src="https://palia.wiki.gg/images/8/84/Spitfire_Cicada.png"/></td>
+            <td>Spitfire Cicada</td>
+            <td>Bahari Fields, Bahari Forest</td>
+            <td>Morning, Day</td>
+            <td><input type="checkbox" id="cb352"></td>
+            <td><input type="checkbox" id="cb353"></td>
+            <td><input type="checkbox" id="cb354"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="rare">Rare</th>
+            <td><img src="https://palia.wiki.gg/images/e/ed/Spotted_Mantis.png"/></td>
+            <td>Spotted Mantis</td>
+            <td>Dragon Shrine</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb355"></td>
+            <td><input type="checkbox" id="cb356"></td>
+            <td><input type="checkbox" id="cb357"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="common">Common</th>
+            <td><img src="https://palia.wiki.gg/images/6/66/Spotted_Stinkbug.png"/></td>
+            <td>Spotted Stinkbug</td>
+            <td>Bahari Fields,<br> Bahari Forest,<br> Daiya Family<br> Farm,<br> Dragon Shrine,<br> Kilima Fields</td>
+            <td>Any Time</td>
+            <td><input type="checkbox" id="cb358"></td>
+            <td><input type="checkbox" id="cb359"></td>
+            <td><input type="checkbox" id="cb360"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="rare">Rare</th>
+            <td><img src="https://palia.wiki.gg/images/0/0e/Stripeshell_Snail.png"/></td>
+            <td>Stripeshell Snail</td>
+            <td>Bahari Coast</td>
+            <td>Evening, Night</td>
+            <td><input type="checkbox" id="cb361"></td>
+            <td><input type="checkbox" id="cb362"></td>
+            <td><input type="checkbox" id="cb363"></td>
+          </tr>
+          <tr>
+            <th scope="row" class="rare">Rare</th>
+            <td><img src="https://palia.wiki.gg/images/1/16/Vampire_Crab.png"/></td>
+            <td>Vampire Crab</td>
+            <td>Flooded Fortress</td>
+            <td>Evening, Night</td>
+            <td><input type="checkbox" id="cb364"></td>
+            <td><input type="checkbox" id="cb365"></td>
+            <td><input type="checkbox" id="cb366"></td>
+          </tr>
+      </table>
+      <p><a href="main.html">Main Page</a></p>
+      <script src="script.js"></script>
+</body>
+</html>
